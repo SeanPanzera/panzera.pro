@@ -1,0 +1,20 @@
+{
+  "name": "panzera.pro",
+  "version": "0.1.0",
+  "author": "Panzer Unit Zeta",
+  "description": "Target obliterated.",
+  "devDependencies": {
+    "concurrently": "latest",
+    "node-sass": "latest",
+    "babel-cli": "latest",
+    "babel-preset-es2015": "latest"
+  },
+  "scripts": {
+    "sass:min": "node-sass --output-style compressed src/scss/master.scss ./min.css | node-sass -w --output-style compressed src/scss/master.scss ./min.css",
+    "babel:min6to5": "babel src/lib/jquery.js src/lib/custom.js src/lib/*.js -w --minified --presets=es2015 -o ./min.js ",
+    "babel:min": "babel src/lib/jquery.js src/lib/custom.js src/lib/*.js -w --minified -o ./min.js ",
+    "start": "concurrently \"npm run sass:min\" \"npm run babel:min\" "
+  },
+  "license": "UNLICENSED",
+  "private": "true"
+}
