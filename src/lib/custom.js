@@ -1,3 +1,3 @@
-let text = "ES6 was here.";
+let text = "If you're reading this, I've edited successfully.";
 
 console.log(text);
