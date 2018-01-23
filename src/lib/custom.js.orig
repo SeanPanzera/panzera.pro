@@ -1,0 +1,7 @@
+<<<<<<< HEAD
+let text = "If you're reading this, I've edited successfully.";
+=======
+let text = "Something is a problem now.";
+>>>>>>> origin/master
+
+console.log(text);
