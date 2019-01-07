@@ -10,9 +10,9 @@
 	font-size: 15vw;
 	letter-spacing: -.75vw;
 	text-align: center;
-	color: transparent;
-	background: linear-gradient(transparent, transparent),
-             url(https://panzera.pro/storage/shit.gif) repeat;
+	color: rgba(255, 255, 255, .75);
+	//background: linear-gradient(transparent, transparent),
+             //url(https://panzera.pro/storage/shit.gif) repeat;
     background-clip: text;
     -webkit-background-clip: text;
 }
