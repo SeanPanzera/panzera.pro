@@ -1,0 +1,17 @@
+.c-greeting {
+	opacity: .15;
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+  	justify-content: center;
+  	align-self: center;
+	font-family: $titleFont;
+	font-size: 15vw;
+	letter-spacing: -.75vw;
+	text-align: center;
+	color: transparent;
+	background: linear-gradient(transparent, transparent),
+             url(https://panzera.pro/storage/shit.gif) repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+}

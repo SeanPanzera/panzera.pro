@@ -7,8 +7,8 @@
     <script><?php include('min.js'); ?></script>
   </head>
   <body>
-    <div id="wrap">
-      <h1>Test Master</h1>
+    <div class="o-wrap">
+      <h1 class="c-greeting">Welcome.</h1>
     </div>
   </body>
 </html>

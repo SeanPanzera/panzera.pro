@@ -1,4 +1,13 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
 $testColor: LimeGreen;
+$titleFont: arial, sans-serif;
+$proseFont: arial, sans-serif;
 
 // Includes 
-@import 'part1','part2';
+@import 'object','component';
+
