@@ -1,7 +1,23 @@
+.home {
+	.c-nav-list {
+		&__home {
+			a {
+				border-bottom: 4px solid cyan;
+			}
+		}
+	}
+}
+
+.o-wrap {
+    animation: 1.5s ease-in 0s 1 blur;
+}
+
 .c-greeting {
-	opacity: .17;
+	margin: 32px auto 0;
+	//opacity: .75;
 	height: 90vh;
 	width: 100%;
+	max-width: 800px;
 	display: flex;
 	flex-direction: column;
   	justify-content: center;
@@ -15,4 +31,51 @@
              //url(https://panzera.pro/storage/shit.gif) repeat;
     background-clip: text;
     -webkit-background-clip: text;
+    text-indent: -9999px;
+    background: url(./src/img/welcome.svg);
+    background-repeat: no-repeat;
+    background-position: 64px center;
+    background-size: 85%;
+    box-sizing:border-box;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,.5));
 }
+
+.c-nav-list {
+	display:flex;
+  	background: black;
+  	box-shadow: 0 2px 4px rgba(0,0,0,.5);
+	&__item {
+		display: flex;
+		width: fit-content;
+		a {
+			padding: 21px;
+			color: white;
+			font-family: $titleFont;
+			font-weight: bold;
+			letter-spacing: -.5px;
+			text-decoration: none;
+			border-bottom: 4px solid transparent;
+			border-image-slice: 1;
+			transition: all ease-in-out .2s;
+		}
+	}
+}
+
+@keyframes blur {
+  0% {
+    filter: blur(16px);
+    opacity: 0;
+    overflow: hidden;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+    overflow: hidden;
+  }
+}
+
+.cyan 	 {&:hover {border-bottom: 4px solid cyan;}}
+.magenta {&:hover {border-bottom: 4px solid magenta;}}
+.yellow  {&:hover {border-bottom: 4px solid yellow;}}
+.green 	 {&:hover {border-bottom: 4px solid lime;}}
+.orange  {&:hover {border-bottom: 4px solid orange;}}
