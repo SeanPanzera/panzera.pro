@@ -9,5 +9,12 @@ $titleFont: arial, sans-serif;
 $proseFont: arial, sans-serif;
 
 // Includes 
-@import 'object','component';
+@import 'object','component','animation';
 
+$fullWidth: 1120px;
+$scrollBarWidth: 20px;
+
+navigation {
+	background: #262626;
+	z-index: 99999;
+};
