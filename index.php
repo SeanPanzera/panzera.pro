@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" class="home">
   <head>
-    <meta charset="utf-8"> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
     <style><?php include('min.css'); ?></style>
     <script><?php include('min.js'); ?></script>
@@ -24,7 +25,8 @@
   </style>
   </head>
   <navigation class="o-navigation">
-    <button class="c-menu-button">
+    <a class="c-menu-button"><button>
+    
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 24 24" style="fill:white;">
       <g>
         <path d="M24,3c0-0.6-0.4-1-1-1H1C0.4,2,0,2.4,0,3v2c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V3z"/>
@@ -32,9 +34,10 @@
         <path d="M24,19c0-0.6-0.4-1-1-1H1c-0.6,0-1,0.4-1,1v2c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V19z"/>
       </g>
     </svg>
- Menu</button>
+ Menu</button></a>
+
     <ul class="c-nav-list">
-      <li class="c-nav-list__item c-nav-list__home">
+      <li class="c-nav-list__item">
         <a href="" class="cyan">Home</a>
       </li>
       <li class="c-nav-list__item">
@@ -44,7 +47,7 @@
         <a href="" class="magenta">What's New</a>
       </li>
       <li class="c-nav-list__item">
-        <a href="https://www.panzera.pro/storage/treasure-hunters.mp4" class="yellow">Team Gaki 2019</a>
+        <a class="c-submenu__link yellow" href="">Links</a>
       </li>
     </ul>
     <ul class="c-nav-list-mobile">
@@ -58,8 +61,19 @@
         <a href="" class="magenta">What's New</a>
       </li>
       <li class="c-nav-list__item">
-        <a href="https://www.panzera.pro/storage/treasure-hunters.mp4" class="yellow">Team Gaki 2019</a>
+        <a href="https://www.panzera.pro/storage/treasure-hunters.mp4" class="yellow">Team Gaki Pt.1</a>
+      </li>      
+      <li class="c-nav-list__item">
+        <a href="https://www.panzera.pro/storage/treasure-hunters-part-2.mp4" class="yellow">Team Gaki Pt.2</a>
       </li>
+    </ul>
+    <ul class="o-submenu c-submenu__link-list">
+      <li><a class="o-submenu-link" href="https://www.reddit.com/r/japanesegameshows/">Japanese Game Shows</a></li>
+      <li><a class="o-submenu-link" href="https://horriblesubs.info/">HorribleSubs</a></li>
+      <li><a class="o-submenu-link" href="https://nyaa.si">NyaaSi</a></li>
+      <li><a class="o-submenu-link" href="https://www3.nhk.or.jp/nhkworld/en/live/">NHK Live</a></li>
+      <li><a class="o-submenu-link" href="https://www.dailymotion.com/freshudon">Udon Subs</a></li>
+      <li><a class="o-submenu-link" href="https://www.teamgaki.com/">Team Gaki</a></li>
     </ul>
   </navigation>
   <body>

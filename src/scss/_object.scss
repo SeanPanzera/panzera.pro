@@ -4,6 +4,7 @@ body {
   position: relative;
   background-size: cover;
   background-position: center;
+  font-family: $proseFont;
   &:after {
   	content: "";
   	position: absolute;
@@ -17,6 +18,54 @@ body {
   	background: linear-gradient(128deg, red, orange, yellow, green, blue, indigo);
     background-size: 400% 400%;
     animation: Gradient 25s ease infinite;
+  }
+  &:before {
+    content: "";
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background: rgba(0,0,0,0);
+    transition: all ease-in-out .15s;
+    z-index: 99;
+  }
+  & .modal {
+    &:before {
+      background: rgba(0,0,0,.5);
+    }
+  }
+}
+
+.o-submenu {
+  width: 100vw;
+  overflow: hidden;
+  transition: all ease-in-out .15s;
+  top: 0;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  padding: $gap*2;
+  background: #333;
+  border-top: 1px solid #262626;
+  border-bottom: 1px solid #262626;
+  z-index: -1;
+  li {
+    display: inline-block;
+    width: auto;
+    margin-right: $gap*2;
+    padding-right: $gap*2;
+    border-right: 1px solid #535353;
+    a {
+      text-decoration: none;
+      color: #acacac;
+      transition: all ease-in-out .25s;
+      &:hover {
+        color: yellow;
+      }
+    }
+  }
+  &__open {
+    top: 69px;
   }
 }
 

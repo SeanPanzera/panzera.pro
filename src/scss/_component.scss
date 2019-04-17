@@ -38,7 +38,7 @@
   background-position: 64px center;
   background-size: 85%;
   box-sizing:border-box;
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,.5));
+  filter: $shadow;
   &:hover {
   	animation: wobble;
   }
@@ -46,11 +46,12 @@
 
 .c-nav-list {
 	display:flex;
+	background: #262626;
 	&__item {
 		display: flex;
 		width: fit-content;
 		a {
-			padding: 21px;
+			padding: 21px 21px 17px;
 			color: white;
 			font-family: $titleFont;
 			font-weight: bold;
@@ -87,6 +88,7 @@
 			background: rgba(0, 0, 0, .66);
 			left: 0;
 			opacity: 1;
+
 		}
 	}
 }
@@ -94,19 +96,27 @@
 .c-menu-button {
 	display: none;
 	@media screen and (max-width: 1000px) {
+		width: fit-content;
 		display: flex;
-    font-size: 1.25em;
-    padding: 8px;
     background: transparent;
     color: white;
     outline-width: 4px;
-    border: 3px solid white;
+    border: 2px solid white;
     border-radius: 3px;
-    margin: 10px;
+    margin: 14px 12px;
+    button {
+    	padding: 8px;
+    	background: none;
+    	outline: none;
+    	color: white;
+   	 	font-size: 1.2em;
+   	 	border: 0;
+   	 	line-height: 0;
+    }
     svg {
     	width: 16px;
     	height: 16px;
-    	margin: 3px 8px 3px 3px;
+    	margin: 2px 4px 0 4px;
     }
 		&__open {
 			background: rgba(255, 255, 255, .15);
