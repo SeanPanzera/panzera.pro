@@ -57,9 +57,10 @@
 }
 
 .c-logo {
-	width: 150px;
+	padding: 23px 27px 17px !important;
+	width: 204px;
 	height: 100%;
-	margin-right: $gap*3.5;
+	margin-right: 0;
 	svg {
 		width: 150px;
 		height: 26px;
@@ -77,12 +78,12 @@
 		display: flex;
 		width: fit-content;
 		a {
-			padding: 21px 21px 17px;
+			padding: 27px 20px 17px;
 			color: white;
 			font-family: $titleFont;
 			font-weight: 500;
 			font-size: 1em;
-			letter-spacing: -.25px;
+			letter-spacing: -.15px;
 			text-decoration: none;
 			background: transparent;
 			border-bottom: 4px solid transparent;
